@@ -394,6 +394,8 @@
   flex-direction: row;
   justify-content: space-between;
   width: 240px;
+  margin-left: 28px;
+  
 }
 
 .footer__menu-link {
@@ -417,10 +419,6 @@
   text-decoration: none;
 }
 
-.footer__social-list {
-  padding-left: 13px;
-}
-
 .footer__social-list-item {
   width: 48px;
   height: 48px;
@@ -432,18 +430,19 @@
 
 .footer__social-icon-youtube {
   background-image: url("../images/yt.svg");
+  background-repeat: no-repeat;
+ 
 }
 
 .footer__social-icon-vkontakte {
   background-image: url("../images/vk.svg");
+  background-repeat: no-repeat;
+  
 }
 
 .footer__social-icon-pinterest {
   background-image: url("../images/pinterest.svg");
+  background-repeat: no-repeat;
+  
 }
-.social-list-item-layout-vkontakte {
-  margin-left: 49px;
-}
-.social-list-item-layout-pinterest {
-  margin-left: 47px;
-}
+
