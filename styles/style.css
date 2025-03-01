@@ -1,3 +1,4 @@
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -79,7 +80,6 @@
   z-index: -1;
   width: 1100px;
   margin-bottom: 180px;
-
   padding-right: 50px;
   padding-left: 50px;
   background-image: url("../images/cover.jpg");
@@ -112,19 +112,23 @@
 
 .banner-name-second-word {
   display: block;
-  padding-top: 16px;
-  padding-left: 27px;
   text-align: center;
+  padding-top: 17px;
+  padding-left: 27px;
+
 }
 
 .banner-name-third-word {
   display: block;
-  padding-top: 19px;
   text-align: right;
+  padding-top: 19px;
+  
+  
+
 }
 
 .banner-name-third-word-last-letter {
-  letter-spacing: 0;
+  letter-spacing:0;
 }
 
 .active-words-and-bet-button {
@@ -334,14 +338,14 @@
   display: flex;
   flex-direction: column;
   grid-area: text;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-left: 5px;
   text-wrap: wrap;
 }
 
 .about__text-padding-bottom {
   padding-top: 8px;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
 }
 
 .about__logo {
@@ -372,13 +376,17 @@
 }
 
 .footer-address {
-  font-family:" Raleway",sans-serif;
+  font-family:"Raleway",sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
   letter-spacing: 0%;
-  padding-right: 28px;
+  padding-right: 38px;
+  padding-top: 3px;
+  padding-left:10px ;
+
+  
 }
 
 .footer__social-list {
@@ -389,11 +397,13 @@
 }
 
 .footer__menu-link {
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .footer__menu {
   text-align: center;
+  padding-top:2px ;
 }
 
 .footer__menu-list-item {
@@ -404,7 +414,7 @@
 }
 
 .footer__menu-link_active {
-  text-underline-offset: 2.7px;
+  text-decoration: none;
 }
 
 .footer__social-list {
