@@ -4,7 +4,8 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   width: 1100px;
-  height: 293px;
+  padding-top: 96px;
+  padding-bottom: 90px;
   
 }
 
@@ -31,7 +32,9 @@
   display: flex;
   gap: 33.5px;
   list-style-type: circle;
+  padding-top: 2px;
 }
+
 .header__links-list-item {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -41,7 +44,7 @@
   list-style: none;
 }
 
-.header-address {
+.contacts {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -50,34 +53,27 @@
   display: block;
   justify-self: end;
   max-width: 240px;
-  height: 98px;
-  margin-right: 84px;
+  margin-right: 80.5px;
+  padding-bottom: 4px;
   padding-right: 3px;
-  padding-bottom: 10px;
-  
 }
 
-.header-address-list {
+.contacts-list {
   list-style: none;
 }
 
-.header-address-list-item {
+.contacts-list-item {
   text-decoration: underline;
-  text-underline-offset: 3.6px;
-}
-.header-address-list-no-underline {
-  text-decoration: none;
+  text-underline-offset: 4px;
 }
 
-/* Уберем браузерное подчеркивание ссылок*/
-
-.address-links-no-underline {
+.no-underline {
   text-decoration: none;
 }
 
 .banner {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   width: 1100px;
   margin-bottom: 180px;
   padding-right: 50px;
@@ -110,24 +106,27 @@
   
 }
 
-.banner-name-second-word {
+ /* Конекретно в данном случае это второе слово в баннере*/
+.banner-name-layout-word {
   display: block;
   text-align: center;
   padding-top: 17px;
   padding-left: 27px;
-
 }
 
-.banner-name-third-word {
+.text-transform {
+  text-transform: uppercase;
+}
+
+ /* Конекретно в данном случае это третье слово в баннере*/
+.banner-name-correct-word {
   display: block;
   text-align: right;
   padding-top: 19px;
-  
-  
-
 }
 
-.banner-name-third-word-last-letter {
+/* Конекретно в данном случае это последняя буква третьего слова в баннере*/
+.banner-name-correct-word-last-letter {
   letter-spacing:0;
 }
 
@@ -243,10 +242,13 @@
   color: white;
 }
 
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
+.card_type {
   background-position: center;
   background-size: 170%;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .item-film {
@@ -261,8 +263,6 @@
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: 170%;
 }
 
 .item-book {
@@ -276,8 +276,6 @@
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: 170%;
 }
 
 .item-picture {
@@ -356,7 +354,7 @@
   height: 240px;
   margin-top: 36px;
   margin-right: 65px;
-  border-radius: 120px;
+  border-radius: 50%;
   background-color: black;
 }
 
@@ -373,20 +371,6 @@
   justify-items: center;
   align-items: start;
   margin-top: 130px;
-}
-
-.footer-address {
-  font-family:"Raleway",sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24.3px;
-  letter-spacing: 0%;
-  padding-right: 38px;
-  padding-top: 3px;
-  padding-left:10px ;
-
-  
 }
 
 .footer__social-list {
@@ -428,21 +412,19 @@
   list-style: none;
 }
 
+.footer__social-icon{
+  background-repeat: no-repeat;
+}
+
 .footer__social-icon-youtube {
   background-image: url("../images/yt.svg");
-  background-repeat: no-repeat;
- 
 }
 
 .footer__social-icon-vkontakte {
-  background-image: url("../images/vk.svg");
-  background-repeat: no-repeat;
-  
+  background-image: url("../images/vk.svg"); 
 }
 
 .footer__social-icon-pinterest {
   background-image: url("../images/pinterest.svg");
-  background-repeat: no-repeat;
-  
 }
 
